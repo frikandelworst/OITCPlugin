@@ -4,8 +4,8 @@ DataSaveMethod: "SQL" #Verander dit naar SQL als je SQL wilt gebruiken om je dat
 
 #Database gegevens indien je voor de optie SQL koos.
 
-host: "nl.proxy.catriox.nl"
+host: ""
 port: 3306
-name: "kyan"
-username: "school"
-password: "School01!"
+name: ""
+username: ""
+password: ""

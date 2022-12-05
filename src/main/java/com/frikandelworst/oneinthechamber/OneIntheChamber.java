@@ -60,16 +60,15 @@ public final class OneIntheChamber extends JavaPlugin {
     }
 
     public void givePlayerKit(Player player){
-        //Maak een boog die unbreakable is
         ItemStack bowStack = new ItemStack(Material.BOW);
         ItemMeta bowStackMeta = bowStack.getItemMeta();
         bowStackMeta.setUnbreakable(true);
         bowStackMeta.setDisplayName(ChatColor.AQUA + "Special bow");
         bowStack.setItemMeta(bowStackMeta);
 
-        //Voeg de boog & een arrow toe aan de inventory van de speler.
         player.getInventory().addItem(bowStack);
         player.getInventory().addItem(new ItemStack(Material.ARROW));
+        player.getInventory().addItem(new ItemStack(Material.COOKED_BEEF, 64));
     }
 
     private void initDb() {

@@ -1,0 +1,6 @@
+name: OneIntheChamber
+version: '${project.version}'
+main: com.frikandelworst.oneinthechamber.OneIntheChamber
+api-version: 1.19
+authors: [ frikandelworst ]
+description: Een voorbeeld project voor DDG.

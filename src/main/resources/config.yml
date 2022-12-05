@@ -1,0 +1,11 @@
+ArrowCooldown: 10 #De cooldown in seconden als je geen speler hebt geraakt voordat je weer kan schieten.
+
+DataSaveMethod: "SQL" #Verander dit naar SQL als je SQL wilt gebruiken om je data op te slaan.
+
+#Database gegevens indien je voor de optie SQL koos.
+
+host: "nl.proxy.catriox.nl"
+port: 3306
+name: "kyan"
+username: "school"
+password: "School01!"

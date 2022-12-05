@@ -13,8 +13,8 @@ public class KDBoard {
         var dataFile = OneIntheChamber.getPlugin().getCustomConfig();
         var dataSaveMethod = OneIntheChamber.getPlugin().getDataSaveMethod();
         if(dataSaveMethod.equals("YML")){
-            setKillsAmount(String.valueOf(dataFile.getInt("players." + player.getUniqueId().toString() + ".kills")));
-            setDeathsAmount(String.valueOf(dataFile.getInt("players." + player.getUniqueId().toString() + ".deaths")));
+            setKillsAmount(String.valueOf(dataFile.getInt("players." + player.getUniqueId() + ".kills")));
+            setDeathsAmount(String.valueOf(dataFile.getInt("players." + player.getUniqueId() + ".deaths")));
         }else if(dataSaveMethod.equals("SQL")){
             setKillsAmount(String.valueOf(OneIntheChamber.getPlugin().getDatabase().getKills(player)));
             setDeathsAmount(String.valueOf(OneIntheChamber.getPlugin().getDatabase().getDeaths(player)));
